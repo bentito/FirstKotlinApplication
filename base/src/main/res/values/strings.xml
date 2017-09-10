@@ -1,3 +1,5 @@
 <resources>
-
+    <string
+        name="has_issues"
+        >HAS ISSUES</string>
 </resources>
