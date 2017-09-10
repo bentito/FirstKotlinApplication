@@ -1,35 +1,37 @@
 apply plugin: 'com.android.application'
+//apply plugin: 'kotlin-kapt'
 
 android {
     flavorDimensions "default"
+//    dataBinding.enabled = true
 
-    productFlavors {
-
-        finalProduction {
-            dimension "default"
-            applicationId "me.fleka.modernandroidapp"
-            resValue "string", "app_name", "Modern App"
-        }
-
-        demoProduction {
-            dimension "default"
-            applicationId "me.fleka.modernandroidapp.demoproduction"
-            resValue "string", "app_name", "Modern App Demo P"
-        }
-
-        demoTesting {
-            dimension "default"
-            applicationId "me.fleka.modernandroidapp.demotesting"
-            resValue "string", "app_name", "Modern App Demo T"
-        }
-
-
-        mock {
-            dimension "default"
-            applicationId "me.fleka.modernandroidapp.mock"
-            resValue "string", "app_name", "Modern App Mock"
-        }
-    }
+//    productFlavors {
+//
+//        finalProduction {
+//            dimension "default"
+//            applicationId "com.example.btofel.modernandroidapp"
+//            resValue "string", "app_name", "Modern App"
+//        }
+//
+//        demoProduction {
+//            dimension "default"
+//            applicationId "com.example.btofel.modernandroidapp.demoproduction"
+//            resValue "string", "app_name", "Modern App Demo P"
+//        }
+//
+//        demoTesting {
+//            dimension "default"
+//            applicationId "com.example.btofel.modernandroidapp.demotesting"
+//            resValue "string", "app_name", "Modern App Demo T"
+//        }
+//
+//
+//        mock {
+//            dimension "default"
+//            applicationId "com.example.btofel.modernandroidapp.mock"
+//            resValue "string", "app_name", "Modern App Mock"
+//        }
+//    }
 
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
